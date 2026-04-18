@@ -1,5 +1,4 @@
-# Project Summary
-# CIS4340 HW03
+# Project Summary - CIS4340 HW03 - Miao Dan Wu Feng
 
 ## Overview
 
@@ -71,12 +70,12 @@ This step-by-step refinement helped improve the accuracy of the extracted data.
 
 The following tools were used:
 
-- Python
+- Python (used language)
 - Requests (HTTP requests)
 - Beautiful Soup (HTML parsing)
 - CSV module (file handling)
 - VS Code (development environment)
-- PowerShell / Terminal (running scripts)
+- Terminal (running scripts)
 - GitHub (version control)
 
 ---
@@ -88,14 +87,14 @@ The development followed these steps:
 1. Build the main scraper (`f9Extract.py`)
 2. Debug table parsing and handle continuation rows
 3. Generate the cleaned dataset (`Blocks.csv`)
-4. Create report programs to filter and analyze the data
+4. Create report programs to filter
 5. Generate all required output files
 6. Develop AI-based versions of the report scripts
 7. Write the project summary
 
 ---
 
-## Difficulties and Hurdles
+## Difficulties
 
 Several challenges were encountered:
 
@@ -104,14 +103,13 @@ Several challenges were encountered:
 - **Continuation rows** in Block 5 tables, requiring tracking of the current booster
 - **Missing turnaround data** for Block 1/1.1, handled by setting values to 0
 - **Unicode encoding errors** in Windows (GBK), fixed by forcing UTF-8 output
-- **PowerShell redirection issues**, caused by accidental extra characters in commands
 
-These issues required debugging and adjusting parsing logic.
+These issues required debugging and adjusting the parsing logic.
 
 ---
 
 ## Conclusion
 
-This project provided hands-on experience with web scraping, data cleaning, and structured data processing in Python. It also demonstrated the importance of handling inconsistent data formats and debugging real-world issues such as encoding errors and HTML structure variations.
+This project provided an interesting experience with web scraping, data cleaning, and structured data processing in Python. It also emphasized the importance of handling inconsistent data formats and debugging real-world issues such as encoding errors and HTML structure variations.
 
 The final result successfully extracts and processes SpaceX booster launch data and generates all required reports.
