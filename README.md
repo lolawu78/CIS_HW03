@@ -43,24 +43,24 @@ Beautiful-Soup was chosen because:
 ## ScrapeGraphAI Prompts
 
 Prompt 1:
-Extract all SpaceX Falcon 9 first-stage booster launch records from the Wikipedia page.
+Read all SpaceX Falcon 9 first-stage booster launch records from the Wikipedia page.
 
 Prompt 2:
-Return the following fields for each launch:
+Return the following elements for each launch:
 engine number, block type, flight number, flight type, launch date (YYYY-MM-DD), launch pad, landing location, turnaround time in days, status, and total number of launches.
 
 Prompt 3:
-Ensure that each row represents a single launch, including multiple launches for the same booster, and include Falcon Heavy side boosters and center core data.
+Make sure that each row represents a single launch, which needs to include multiple launches for the same booster, Falcon Heavy side boosters, and center core data.
 
 ---
 
 ## Prompt Strategy
 
 The prompt strategy started with a general request for booster data. Then it was refined to:
-- specify exact required fields
+- specify the exact required elements
 - enforce one row per launch
-- require CSV-style output
-- ensure proper formatting of dates and turnaround values
+- require the CSV file as output
+- make sure the proper formatting of dates and turnaround values
 
 This step-by-step refinement helped improve the accuracy of the extracted data.
 
