@@ -2,19 +2,19 @@
 
 ## Overview
 
-This project extracts SpaceX Falcon 9 and Falcon Heavy booster launch data from Wikipedia. The goal is to collect launch records for Block 1, 1.1, 4, and 5 boosters, clean the data, and generate multiple reports based on the extracted dataset.
+This project extracts launch data for SpaceX Falcon 9 and Falcon Heavy boosters from Wikipedia. The goal is to collect launch records for Block 1, 1.1, 4, and 5 boosters, clean the data, and generate multiple reports based on the extracted dataset.
 
-The final dataset includes one row per launch with the following fields:
+The final dataset includes one row per launch with the following:
 engine number, block type, flight number, flight type, launch date, launch pad, landing location, turnaround time, status, and total number of launches.
 
 ---
 
 ## Selected Scraper
 
-For the regular scraper, I selected **Beautiful Soup** instead of Scrapy.
+For the regular scraper, I chose **Beautiful-Soup** instead of Scrapy.
 
-Beautiful Soup was chosen because:
-- The project only requires scraping a single Wikipedia page
+Beautiful-Soup was chosen because:
+- The project requires scraping a single Wikipedia page
 - It is easier to debug and control compared to Scrapy
 - It allows direct parsing of HTML tables
 - It is faster to develop for structured table data
@@ -96,9 +96,8 @@ The development followed these steps:
 
 ## Difficulties
 
-Several challenges were encountered:
+Several challenges during the processes:
 
-- **403 Forbidden error** when accessing Wikipedia, fixed by adding request headers
 - **Different table structures** across Block 1, Block 4, and Block 5
 - **Continuation rows** in Block 5 tables, requiring tracking of the current booster
 - **Missing turnaround data** for Block 1/1.1, handled by setting values to 0
